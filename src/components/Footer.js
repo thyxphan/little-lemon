@@ -2,8 +2,11 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer>
-      <nav>
+    <footer className="footer">
+      <div className="footer-logo">
+        <p>&copy; 2025 Little Lemon</p>
+      </div>
+      <nav className="footer-nav">
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/menu">Menu</a></li>
@@ -11,8 +14,6 @@ function Footer() {
           <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>
-
-      <p>&copy; 2025 Little Lemon. All rights reserved.</p>
     </footer>
   );
 }
