@@ -11,3 +11,188 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Font & text */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+/* Layout Helpers */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Border / radius */
+.rounded {
+  border-radius: 8px;
+}
+
+/* Buttons */
+button {
+  padding: 0.8rem 1.5rem;
+  background-color: #f4ce14; /* Example accent color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0b800;
+}
+
+/* Section spacing */
+section {
+  padding: 3rem 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f4ce14;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fef9f3;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+.hero img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+.specials {
+  background-color: #fff5e1;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.specials h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.special-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.special-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 200px;
+}
+
+.special-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.special-card h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.special-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+.testimonials {
+  background-color: #f4f4f4;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial {
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.testimonial p:last-child {
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+.about {
+  background-color: #fff;
+  padding: 3rem 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.about p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+.mb-4 { margin-bottom: 1rem; }
+.text-center { text-align: center; }
+.flex-col { display: flex; flex-direction: column; }

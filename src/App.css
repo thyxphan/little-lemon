@@ -187,13 +187,13 @@
     gap: 2rem;
     margin-top: 2rem;
   }
-  
+
   .dish {
     text-align: center; /* THIS centers title, image, text */
     max-width: 250px;
   }
-  
+
   .dish img {
     margin: 1rem auto; /* centers image under the heading */
   }
-  
+
