@@ -1,198 +1,222 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* =========================
+   CSS Variables
+   ========================= */
+   :root {
+    --primary: #495e57;
+    --accent: #f4ce14;
+    --light-bg: #f4f4f4;
+    --text-dark: #333;
+    --radius-sm: 5px;
+    --radius-md: 8px;
+    --radius-lg: 10px;
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  /* =========================
+     Global Styles
+     ========================= */
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-/* Font & text */
-body {
-  font-family: 'Arial', sans-serif;
-  color: #333;
-  line-height: 1.5;
-}
+  code {
+    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+  }
 
-h1 {
-  font-size: 3rem;
-  letter-spacing: 1px;
-}
+  /* =========================
+     Typography
+     ========================= */
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 1px;
+  }
 
-h2 {
-  font-size: 2rem;
-  letter-spacing: 0.5px;
-}
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
 
-/* Layout Helpers */
-.flex {
-  display: flex;
-}
+  p {
+    margin: 0.75rem 0;
+  }
 
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  /* =========================
+     Layout Helpers
+     ========================= */
+  .text-center {
+    text-align: center;
+  }
 
-.grid {
-  display: grid;
-  gap: 1rem;
-}
+  section {
+    padding: 3rem 2rem;
+  }
 
-/* Border / radius */
-.rounded {
-  border-radius: 8px;
-}
+  /* =========================
+     Buttons
+     ========================= */
+  button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent);
+    color: #000;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-weight: bold;
+    cursor: pointer;
+  }
 
-/* Buttons */
-button {
-  padding: 0.8rem 1.5rem;
-  background-color: #f4ce14; /* Example accent color */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+  button:hover {
+    background-color: #e0b800;
+  }
 
-button:hover {
-  background-color: #e0b800;
-}
+  /* =========================
+     Navbar
+     ========================= */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+  }
 
-/* Section spacing */
-section {
-  padding: 3rem 2rem;
-}
+  nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  background-color: #333;
-  color: #fff;
-}
+  nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+  }
 
-nav ul {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
+  nav a:hover {
+    color: var(--primary);
+  }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
+  /* =========================
+     Hero / Call To Action
+     ========================= */
+  .hero {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    background-color: var(--primary);
+    color: #fff;
+    padding: 4rem 2rem;
+    border-radius: var(--radius-lg);
+  }
 
-nav a:hover {
-  color: #f4ce14;
-}
+  .hero-text {
+    flex: 1;
+  }
 
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fef9f3;
-  padding: 4rem 2rem;
-}
+  .hero-text p {
+    margin-bottom: 1.5rem;
+  }
 
-.hero h1 {
-  font-size: 3rem;
-  color: #333;
-}
+  .hero-text button {
+    background-color: #fff;
+    color: var(--primary);
+  }
 
-.hero p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin: 1rem 0;
-}
+  .hero-image {
+    flex: 1;
+  }
 
-.hero img {
-  max-width: 400px;
-  border-radius: 10px;
-}
-.specials {
-  background-color: #fff5e1;
-  padding: 3rem 2rem;
-  text-align: center;
-}
+  .hero-image img {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    object-fit: cover;
+  }
 
-.specials h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
+  /* =========================
+     Specials Section
+     ========================= */
+  .specials {
+    background-color: #fff5e1;
+    text-align: center;
+  }
 
-.special-cards {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
+  .special-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
 
-.special-card {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 1rem;
-  width: 200px;
-}
+  .special-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: var(--radius-lg);
+  }
 
-.special-card img {
-  width: 100%;
-  border-radius: 10px;
-}
+  .special-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+  }
 
-.special-card h3 {
-  margin-top: 1rem;
-  font-size: 1.2rem;
-}
+  /* =========================
+     Testimonials Section
+     ========================= */
+  .testimonials {
+    background-color: var(--light-bg);
+    text-align: center;
+  }
 
-.special-card p {
-  font-size: 0.9rem;
-  color: #555;
-}
-.testimonials {
-  background-color: #f4f4f4;
-  padding: 3rem 2rem;
-  text-align: center;
-}
+  .testimonial-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
 
-.testimonials h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
+  .testimonial {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: var(--radius-md);
+  }
 
-.testimonial {
-  margin-bottom: 1.5rem;
-  font-style: italic;
-}
+  .stars {
+    color: var(--accent);
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
 
-.testimonial p:last-child {
-  font-style: normal;
-  font-weight: bold;
-  margin-top: 0.5rem;
-}
-.about {
-  background-color: #fff;
-  padding: 3rem 2rem;
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
+  .customer-name {
+    margin-top: 0.5rem;
+    font-weight: 600;
+  }
 
-.about img {
-  max-width: 300px;
-  border-radius: 10px;
-}
+  /* =========================
+     About Section
+     ========================= */
+  .about {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
 
-.about p {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-.mt-2 { margin-top: 0.5rem; }
-.mt-4 { margin-top: 1rem; }
-.mb-4 { margin-bottom: 1rem; }
-.text-center { text-align: center; }
-.flex-col { display: flex; flex-direction: column; }
+  .about img {
+    max-width: 300px;
+    border-radius: var(--radius-lg);
+  }
+
+  /* =========================
+     Footer
+     ========================= */
+  footer {
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }

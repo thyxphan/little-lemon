@@ -1,15 +1,15 @@
 import CallToAction from '../components/CallToAction';
 import Specials from '../components/Specials';
 import CustomersSay from '../components/CustomersSay';
-import Chicago from '../components/Chicago';
+import Footer from '../components/Footer';
 
 function HomePage() {
   return (
     <div>
-      <CallToAction />
       <Specials />
+      <CallToAction />
       <CustomersSay />
-      <Chicago />
+      <Footer />
     </div>
   );
 }
